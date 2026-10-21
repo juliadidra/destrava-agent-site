@@ -11,7 +11,7 @@
 </head>
 <body>
   <h1>Política de Privacidade</h1>
-  <p>Última atualização: 20 de outubro de 2026.</p>
+  <p>Última atualização: 21 de outubro de 2026.</p>
 
   <p>
     Destrava Agent é um aplicativo de uso pessoal, operado por seu próprio dono em um servidor que ele controla.
@@ -21,14 +21,15 @@
   <h2>Dados acessados</h2>
   <p>
     Com a autorização do dono da conta, o aplicativo usa o escopo
-    <code>https://www.googleapis.com/auth/calendar.readonly</code> para ler a Google Agenda em modo somente leitura,
-    com o objetivo de identificar os horários ocupados e calcular o tempo livre de cada dia.
+    <code>https://www.googleapis.com/auth/calendar.freebusy</code> para consultar apenas a disponibilidade da
+    Google Agenda (quais horários estão livres ou ocupados), com o objetivo de calcular o tempo livre de cada dia.
+    O aplicativo não tem acesso a títulos, descrições, locais ou participantes dos eventos.
   </p>
 
   <h2>Como os dados são usados</h2>
   <ul>
     <li>Os dados da agenda são usados apenas para planejar as tarefas do próprio dono da conta.</li>
-    <li>O aplicativo não altera, cria nem apaga eventos.</li>
+    <li>O aplicativo não lê o conteúdo dos eventos e não altera, cria nem apaga eventos.</li>
     <li>Os dados não são vendidos, compartilhados com terceiros nem usados para publicidade.</li>
     <li>Nenhuma pessoa lê os dados da agenda, exceto o próprio dono.</li>
   </ul>
@@ -36,7 +37,7 @@
   <h2>Armazenamento</h2>
   <p>
     A credencial de acesso (refresh token) fica guardada somente no servidor do dono, em variáveis de ambiente,
-    fora de qualquer repositório público. O conteúdo da agenda é consultado sob demanda e não é copiado para
+    fora de qualquer repositório público. As informações de disponibilidade são consultadas sob demanda e não é copiado para
     serviços externos.
   </p>
 
